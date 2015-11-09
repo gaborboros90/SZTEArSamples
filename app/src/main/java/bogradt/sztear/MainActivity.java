@@ -1,19 +1,43 @@
 package bogradt.sztear;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
-import android.view.WindowManager;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+import bogradt.sztear.model.ActivityList;
+import bogradt.sztear.model.ActivityPropertyAdatpter;
+import bogradt.sztear.model.ActivityPropertyBean;
 
 
 public class MainActivity extends ActionBarActivity {
+    private ActivityPropertyAdatpter activityPropertyAdatpter;
+    private ListView listView;
+    private ActivityList activityList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        activityList = new ActivityList();
+        activityPropertyAdatpter = new ActivityPropertyAdatpter(getApplicationContext(), activityList.getActivityPropertyBeanList());
+        listView = (ListView) findViewById(R.id.activity_list);
+        listView.setAdapter(activityPropertyAdatpter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                ActivityPropertyBean apb = (ActivityPropertyBean) parent.getItemAtPosition(position);
+
+                Intent intent = new Intent(getApplicationContext(),PreliminaryInformationsActivity.class);
+                intent.putExtra("bean",apb);
+                startActivity(intent);
+            }
+        });
     }
 
 
