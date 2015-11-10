@@ -6,6 +6,11 @@
         <item name="android:screenOrientation">portrait</item>
     </style>
 
+    <style name="PortraitMode" parent="AppTheme">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:configChanges">orientation|keyboardHidden</item>
+    </style>
+
     <style name="header">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">match_parent</item>

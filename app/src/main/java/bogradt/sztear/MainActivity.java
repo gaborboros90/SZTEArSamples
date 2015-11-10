@@ -1,5 +1,6 @@
 package bogradt.sztear;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -33,9 +34,11 @@ public class MainActivity extends ActionBarActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 ActivityPropertyBean apb = (ActivityPropertyBean) parent.getItemAtPosition(position);
 
-                Intent intent = new Intent(getApplicationContext(),PreliminaryInformationsActivity.class);
-                intent.putExtra("bean",apb);
-                startActivity(intent);
+                Intent preliminaryActivity = new Intent(getApplicationContext(),PreliminaryInformationsActivity.class);
+                preliminaryActivity.putExtra("bean", apb);
+
+                Bundle animationBundle = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.slide_in,R.anim.slide_out).toBundle();
+                startActivity(preliminaryActivity, animationBundle);
             }
         });
     }
