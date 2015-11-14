@@ -37,7 +37,7 @@ public class MainActivity extends ActionBarActivity {
                 ActivityPropertyBean apb = (ActivityPropertyBean) parent.getItemAtPosition(position);
 
                 Intent preliminaryActivity = new Intent(getApplicationContext(),PreliminaryInformationsActivity.class);
-                preliminaryActivity.putExtra("bean", apb);
+                preliminaryActivity.putExtra("propertyBean", apb);
 
                 Bundle animationBundle = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.slide_in,R.anim.slide_out).toBundle();
                 startActivity(preliminaryActivity, animationBundle);

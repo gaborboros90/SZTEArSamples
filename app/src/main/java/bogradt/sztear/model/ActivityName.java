@@ -1,6 +1,6 @@
 package bogradt.sztear.model;
 
-public enum ActivityNames {
+public enum ActivityName {
     ImageTargets,
     CylinderTarget,
     UserDefinedTarget,

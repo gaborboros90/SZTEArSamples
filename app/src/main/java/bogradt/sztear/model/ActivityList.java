@@ -9,22 +9,22 @@ public class ActivityList {
 
     public ActivityList() {
 
-        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description",ActivityNames.ImageTargets,
-                R.drawable.button,R.drawable.button,"Sample Image target",new String[]{""}));
-        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description",ActivityNames.CloudRecognition,
-                R.drawable.button,R.drawable.button,"Using clouds",new String[]{""}));
-        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description",ActivityNames.CylinderTarget,
-                R.drawable.button,R.drawable.button,"Cylinder targets",new String[]{""}));
-        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description",ActivityNames.FrameMarkers,
-                R.drawable.button,R.drawable.button,"Frame markers",new String[]{""}));
-        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description",ActivityNames.TextRecognition,
-                R.drawable.button,R.drawable.button,"Text recognition with Vuforia",new String[]{""}));
-        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description",ActivityNames.UserDefinedTarget,
-                R.drawable.button,R.drawable.button,"User defined targets",new String[]{""}));
-        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description",ActivityNames.VirtualButtons,
-                R.drawable.button,R.drawable.button,"Virtual buttons",new String[]{""}));
-        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description",ActivityNames.ExtendedTracking,
-                R.drawable.button,R.drawable.button,"Extended tracking sample",new String[]{""}));
+        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description", ActivityName.ImageTargets,
+                R.drawable.button,R.drawable.preview,"Sample Image target",new String[]{""}));
+        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description", ActivityName.CloudRecognition,
+                R.drawable.button,R.drawable.preview,"Using clouds",new String[]{""}));
+        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description", ActivityName.CylinderTarget,
+                R.drawable.button,R.drawable.preview,"Cylinder targets",new String[]{""}));
+        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description", ActivityName.FrameMarkers,
+                R.drawable.button,R.drawable.preview,"Frame markers",new String[]{""}));
+        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description", ActivityName.TextRecognition,
+                R.drawable.button,R.drawable.preview,"Text recognition with Vuforia",new String[]{""}));
+        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description", ActivityName.UserDefinedTarget,
+                R.drawable.button,R.drawable.preview,"User defined targets",new String[]{""}));
+        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description", ActivityName.VirtualButtons,
+                R.drawable.button,R.drawable.preview,"Virtual buttons",new String[]{""}));
+        activityPropertyBeanList.add(new ActivityPropertyBean("Short description","A little bit longer description", ActivityName.ExtendedTracking,
+                R.drawable.button,R.drawable.preview,"Extended tracking sample",new String[]{""}));
     }
 
     public ArrayList<ActivityPropertyBean> getActivityPropertyBeanList() {

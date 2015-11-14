@@ -10,4 +10,5 @@
     <string name="title_activity_dialog_contact">Contact me</string>
     <string name="email_address_to_contact">gaborboros90@gmail.com</string>
     <string name="about_application">https://github.com/gaborboros90/SZTEArSamples</string>
+    <string name="start_button_label">Start application</string>
 </resources>

@@ -5,16 +5,16 @@ import java.io.Serializable;
 public class ActivityPropertyBean implements Serializable {
     private final String shortDescription;
     private final String detailedDescription;
-    private final ActivityNames activityNames;
+    private final ActivityName activityName;
     private final int smallThumbnail;
     private final int previewImage;
     private final String activityTitle;
     private final String[] markerImageAddress;
 
-    public ActivityPropertyBean(String shortDescription, String detailedDescription, ActivityNames activityNames, int smallThumbnail, int previewImage, String activityTitle, String[] markerImageAddress) {
+    public ActivityPropertyBean(String shortDescription, String detailedDescription, ActivityName activityName, int smallThumbnail, int previewImage, String activityTitle, String[] markerImageAddress) {
         this.shortDescription = shortDescription;
         this.detailedDescription = detailedDescription;
-        this.activityNames = activityNames;
+        this.activityName = activityName;
         this.smallThumbnail = smallThumbnail;
         this.previewImage = previewImage;
         this.activityTitle = activityTitle;
@@ -25,8 +25,8 @@ public class ActivityPropertyBean implements Serializable {
         return shortDescription;
     }
 
-    public ActivityNames getActivityNames() {
-        return activityNames;
+    public ActivityName getActivityName() {
+        return activityName;
     }
 
     public String getDetailedDescription() {
@@ -54,7 +54,7 @@ public class ActivityPropertyBean implements Serializable {
         return "ActivityPropertyBean{" +
                 "shortDescription=" + shortDescription +
                 ", detailedDescription=" + detailedDescription +
-                ", activityName=" + activityNames +
+                ", activityName=" + activityName +
                 ", smallThumbnail=" + smallThumbnail +
                 ", previewImage=" + previewImage +
                 ", activityTitle=" + activityTitle +
