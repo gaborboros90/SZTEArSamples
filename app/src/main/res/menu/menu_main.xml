@@ -4,8 +4,4 @@
           android:icon="@drawable/info_icon"
           android:title="@string/action_info"
           myapp:showAsAction="always" />
-    <item android:id="@+id/action_contact"
-          android:icon="@drawable/info_icon"
-          android:title="@string/action_contact"
-          myapp:showAsAction="always" />
 </menu>

@@ -4,6 +4,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:screenOrientation">portrait</item>
+        <item name="android:actionBarStyle">@color/primary_material_dark</item>
     </style>
 
     <style name="PortraitMode" parent="AppTheme">
@@ -15,5 +16,11 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:src">@drawable/header</item>
+    </style>
+
+    <style name="MyTitledActivityDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTitleBackgroundStyle">@android:color/primary_text_dark</item>
+        <item name="windowActionBar">false</item>
     </style>
 </resources>

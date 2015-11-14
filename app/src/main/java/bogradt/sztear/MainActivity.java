@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import bogradt.sztear.dialogs.DialogInfoActivity;
 import bogradt.sztear.model.ActivityList;
 import bogradt.sztear.model.ActivityPropertyAdatpter;
 import bogradt.sztear.model.ActivityPropertyBean;
@@ -60,11 +61,10 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        switch (id){
-            case R.id.action_info: ;
-                break;
-            case R.id.action_contact: ;
-                break;
+
+        if(id == R.id.action_info) {
+            Intent infoDialog = new Intent(getApplicationContext(), DialogInfoActivity.class);
+            startActivity(infoDialog);
         }
 
         return super.onOptionsItemSelected(item);
