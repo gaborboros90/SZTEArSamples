@@ -1,9 +1,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:app="http://schemas.android.com/apk/res-auto"
-      xmlns:tools="http://schemas.android.com/tools"
-      tools:context=".MainActivity">
-    <item android:id="@+id/action_settings"
-          android:title="@string/action_settings"
-          android:orderInCategory="100"
-          app:showAsAction="never"/>
+      xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_info"
+          android:icon="@drawable/info_icon"
+          android:title="@string/action_info"
+          myapp:showAsAction="always" />
+    <item android:id="@+id/action_contact"
+          android:icon="@drawable/info_icon"
+          android:title="@string/action_contact"
+          myapp:showAsAction="always" />
 </menu>

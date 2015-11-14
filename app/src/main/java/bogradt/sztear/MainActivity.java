@@ -28,6 +28,7 @@ public class MainActivity extends ActionBarActivity {
         activityPropertyAdatpter = new ActivityPropertyAdatpter(getApplicationContext(), activityList.getActivityPropertyBeanList());
         listView = (ListView) findViewById(R.id.activity_list);
         listView.setAdapter(activityPropertyAdatpter);
+        listView.setSelector(R.drawable.item_press_selector);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -59,8 +60,11 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id){
+            case R.id.action_info: ;
+                break;
+            case R.id.action_contact: ;
+                break;
         }
 
         return super.onOptionsItemSelected(item);
