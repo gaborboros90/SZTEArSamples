@@ -19,22 +19,19 @@
             android:textSize="28sp"
             android:fontFamily="@string/abc_action_mode_done"
             android:textStyle="bold"
-            android:text="Dummy text for Title"
-            android:padding="15dp"/>
-        <TextView
-            android:textSize="22sp"
-            android:fontFamily="@string/abc_action_mode_done"
-            android:textStyle="bold"
-            android:text="Dummy text for long description. Dummy text for long description. Dummy text for long description."
             android:padding="15dp"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/long_description"
             android:background="@drawable/list_border"/>
         <TextView
             android:textSize="22sp"
             android:fontFamily="@string/abc_action_mode_done"
-            android:textStyle="bold"
+            android:padding="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/long_description"
+            />
+        <TextView
+            android:textSize="22sp"
+            android:fontFamily="@string/abc_action_mode_done"
             android:text="Download related image target"
             android:padding="15dp"
             android:layout_width="fill_parent"
@@ -49,6 +46,7 @@
             android:padding="10dp"
             android:cropToPadding="false"
             android:baselineAlignBottom="false"
+            android:id="@+id/previewImage"
             />
     </LinearLayout>
     <Button
@@ -59,7 +57,7 @@
         android:layout_alignParentBottom="true"
         android:id="@+id/start_button"
         android:text="@string/start_button_label"
-        android:background="#ff1f1a17"
+        android:background="@drawable/button_selector"
         android:textColor="#ffece578"/>
 </RelativeLayout>
 

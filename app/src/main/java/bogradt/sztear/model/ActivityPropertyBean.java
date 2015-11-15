@@ -9,9 +9,9 @@ public class ActivityPropertyBean implements Serializable {
     private final int smallThumbnail;
     private final int previewImage;
     private final String activityTitle;
-    private final String[] markerImageAddress;
+    private final String markerImageAddress;
 
-    public ActivityPropertyBean(String shortDescription, String detailedDescription, ActivityName activityName, int smallThumbnail, int previewImage, String activityTitle, String[] markerImageAddress) {
+    public ActivityPropertyBean(String shortDescription, String detailedDescription, ActivityName activityName, int smallThumbnail, int previewImage, String activityTitle, String markerImageAddress) {
         this.shortDescription = shortDescription;
         this.detailedDescription = detailedDescription;
         this.activityName = activityName;
@@ -45,7 +45,7 @@ public class ActivityPropertyBean implements Serializable {
         return activityTitle;
     }
 
-    public String[] getMarkerImageAddress() {
+    public String getMarkerImageAddress() {
         return markerImageAddress;
     }
 
