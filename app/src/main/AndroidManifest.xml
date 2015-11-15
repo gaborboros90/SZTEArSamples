@@ -38,22 +38,14 @@
             android:label="@string/title_activity_dialog_info">
         </activity>
 
-        <activity android:name=".apps.ImageTargets.ImageTargets">
-        </activity>
-        <activity android:name=".apps.CloudRecognition.CloudRecognition">
-        </activity>
-        <activity android:name=".apps.CylinderTarget.CylinderTarget">
-        </activity>
-        <activity android:name=".apps.ExtendedTracking.ExtendedTracking">
-        </activity>
-        <activity android:name=".apps.FrameMarkers.FrameMarkers">
-        </activity>
-        <activity android:name=".apps.TextRecognition.TextRecognition">
-        </activity>
-        <activity android:name=".apps.UserDefinedTarget.UserDefinedTarget">
-        </activity>
-        <activity android:name=".apps.VirtualButtons.VirtualButtons">
-        </activity>
+        <activity android:name=".apps.ImageTargets.ImageTargets" />
+        <activity android:name=".apps.CloudRecognition.CloudRecognition" />
+        <activity android:name=".apps.CylinderTarget.CylinderTarget" />
+        <activity android:name=".apps.ExtendedTracking.ExtendedTracking" />
+        <activity android:name=".apps.FrameMarkers.FrameMarkers" />
+        <activity android:name=".apps.TextRecognition.TextRecognition" />
+        <activity android:name=".apps.UserDefinedTarget.UserDefinedTarget" />
+        <activity android:name=".apps.VirtualButtons.VirtualButtons" />
     </application>
 
 </manifest>
